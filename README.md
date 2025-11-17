@@ -1,9 +1,7 @@
 # yliu0516_9103_tut03
 Creative coding major project
 
-# 🎵 Pacita Abad - Wheels of Fortune
-
-# Part1 Instructions
+# 🎵 Pacita Abad - Wheels of Fortune Audio-Driven Animation
 
 ## 🎮 Interaction Guide
 
@@ -14,8 +12,6 @@ Creative coding major project
 | **Click** | Allow microphone access | Browser permission dialog |
 
 **Pro Tip:** Play music or speak into your microphone to see real-time visual responses!
-
-# Part2 Details
 
 ## 🎨 Animation Method: Audio-Driven
 
@@ -49,38 +45,32 @@ I chose **Audio-Driven Animation** to create a living artwork that responds to e
 
 ### Core Components
 ```javascript
-{
 // Audio Analysis Engine
 fft = new p5.FFT(0.8, 64);        // Smooth frequency analysis
 mic = new p5.AudioIn();           // Live audio input
 wheel.updateAudio(bass, mid, high); // Per-wheel audio processing
-}
+Enhanced Features
 
-
-🔊 Enhanced Features
-
-⚡ Multi-band EQ Response - Separate bass/mid/treble handling
-⚡ HSL Color Transforms - Dynamic hue shifting
+🔊 Multi-band EQ Response - Separate bass/mid/treble handling
+🎨 HSL Color Transforms - Dynamic hue shifting
 ⚡ Performance Optimized - Efficient real-time processing
-⚡ Responsive Design - Works on all screen sizes
-
+📱 Responsive Design - Works on all screen sizes
 📁 Code Enhancements
+
 Built upon group foundation with:
 
 initializeAudio() - Complete audio pipeline setup
 updateAudioAnalysis() - Real-time spectrum processing
 Wheel.updateAudio() - Individual wheel sound response
 Interactive control system with visual feedback
-
 🎯 Creative Vision
 
-This implementation transforms Pacita Abad‘s static geometric patterns into a living soundscape. Each wheel becomes an auditory receptor, creating a collective visual orchestra that dances with environmental sounds.
+This implementation transforms Pacita Abad's static geometric patterns into a living soundscape. Each wheel becomes an auditory receptor, creating a collective visual orchestra that dances with environmental sounds.
 
-🔗 References
+🔗 Credits & References
 
 p5.js Sound Library - Official Docs
 Web Audio API - Modern browser audio standards
 FFT Analysis - Digital signal processing techniques
 Team Foundation - Base wheel design and color palettes
-
 💡 Experience Tip: For best results, try different music genres or ambient sounds to discover unique visual patterns!
