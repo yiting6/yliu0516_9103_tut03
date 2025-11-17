@@ -56,7 +56,7 @@ wheel.updateAudio(bass, mid, high); // Per-wheel audio processing
 ⚡ Performance Optimized - Efficient real-time processing
 📱 Responsive Design - Works on all screen sizes
 
-### 📁 Code Enhancements
+## 📁 Code Enhancements
 
 Built upon group foundation with:
 
@@ -65,11 +65,11 @@ updateAudioAnalysis() - Real-time spectrum processing
 Wheel.updateAudio() - Individual wheel sound response
 Interactive control system with visual feedback
 
-### 🎯 Creative Vision
+## 🎯 Creative Vision
 
 This implementation transforms Pacita Abad's static geometric patterns into a living soundscape. Each wheel becomes an auditory receptor, creating a collective visual orchestra that dances with environmental sounds.
 
-### 🔗 Credits & References
+## 🔗 Credits & References
 
 p5.js Sound Library - Official Docs
 Web Audio API - Modern browser audio standards
