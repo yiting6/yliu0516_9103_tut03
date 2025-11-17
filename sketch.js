@@ -372,3 +372,43 @@ class Wheel {
     pop();
   }
 }
+
+// ------------------ COLOUR PALETTES ------------------ //
+
+function pickPalette() {
+  let options = [
+    {
+      outer:  "#FFFFFF", ring1:  "#FF7EB6", ring2:  "#FF96BF", ring3:  "#FFB7D4",
+      dots1:  "#E83432", dots2:  "#FFFFFF", dots3:  "#FF7AAE", rays:   "#FF4C8B",
+      inner:  "#E92D72", center: "#000000", tail:   "#FF4F9D"
+    },
+    {
+      outer:  "#FF9A00", ring1:  "#FFAF37", ring2:  "#FFC260", ring3:  "#FFDD9E",
+      dots1:  "#E83432", dots2:  "#FF81B9", dots3:  "#FF507C", rays:   "#E83432",
+      inner:  "#FF4D84", center: "#000000", tail:   "#FF4F9D"
+    },
+    // ... palettes
+    {
+      outer:  "#FDC54C", ring1:  "#F275BD", ring2:  "#C964C5", ring3:  "#66A4C0",
+      dots1:  "#C76A00", dots2:  "#FDC54C", dots3:  "#EF75D1", rays:   "#C76A00",
+      inner:  "#9ECCE0", center: "#000000", tail:   "#FF4F9D"
+    }
+  ];
+  return random(options);
+}
+
+// ------------------ INPUT ------------------ //
+
+function keyPressed() {
+  if (key === 'a' || key === 'A') {
+    animateWheels = !animateWheels;
+  }
+  
+  if (key === 'm' || key === 'M') {
+    if (!audioStarted) {
+      initializeAudio();
+    } else {
+      isMicOn = !isMicOn;
+    }
+  }
+}

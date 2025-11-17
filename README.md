@@ -50,9 +50,12 @@ I chose **Audio-Driven Animation** to create a living artwork that responds to e
 ### Core Components
 ```javascript
 // Audio Analysis Engine
+{
 fft = new p5.FFT(0.8, 64);        // Smooth frequency analysis
 mic = new p5.AudioIn();           // Live audio input
 wheel.updateAudio(bass, mid, high); // Per-wheel audio processing
+}
+
 
 🔊 Enhanced Features
 
